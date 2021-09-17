@@ -15,7 +15,7 @@
 
 body {
   max-width: 1200px;
-  height: 633px;
+  height: 445px;
   margin-left: auto;
   margin-right: auto;
   background-color: #e7edff;
@@ -37,7 +37,7 @@ body {
   position: absolute;
   max-width: 1336px;
   height: 445px;
-  top: 450px;
+  top: -450px;
 }
 
 #card {
