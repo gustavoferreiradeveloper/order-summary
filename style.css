@@ -35,7 +35,7 @@ body {
 .bg-pattern {
   display: flex;
   position: absolute;
-  max-width: 1336px;
+  max-width: 1200px;
   height: 445px;
  
 }
