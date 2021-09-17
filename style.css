@@ -1,3 +1,6 @@
+@charset "UTF-8";
+/* CSS Document */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,18 +14,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap");
 
 body {
-  width: 1230px;
-  height: auto;
+  width: 1200px;
+  height: 634px;
   background-color: #e7edff;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .bg {
   display: flex;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  width: 1200px;
   position: absolute;
+}
+
+.bg-pattern {
+  display: flex;
+  position: absolute;
+  height: 445px;
+  top: -450px;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 #card {
