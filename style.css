@@ -35,9 +35,9 @@ body {
 .bg-pattern {
   display: flex;
   position: absolute;
-  max-width: 1200px;
-  height: 600px;
- 
+  max-width: 1336px;
+  height: 445px;
+  top: -450px;
 }
 
 #card {
