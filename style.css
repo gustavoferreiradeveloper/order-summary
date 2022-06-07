@@ -89,7 +89,7 @@ header p {
   height: 35px;
 }
 
-.description {
+h2 {
   font-weight: 600;
   grid-column: 2;
   grid-row: 2;
@@ -145,8 +145,11 @@ a {
   cursor: pointer;
 }
 
-.payment a {
+.payment h2{
   margin-top: 25px;
+}
+
+.payment a {
   text-decoration: none;
   color: var(--desaturatedBlue);
 }
