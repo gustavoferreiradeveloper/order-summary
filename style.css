@@ -1,13 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap");
 
-/*Fonte importada do Google Fontes (Red Hat Display)*/
-
 * {
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
   font-family: "Red Hat Display", sans-serif;
+}
+
+:root{
+  --white:#ffffff;
+  --paleBlue: #e0e8ff;
+  --brightBlue: #3829e0;
+  --veryPaleBlue: #f5f7ff;
+  --desaturatedBlue: #7280a7;
+  --violetStats:#766cf1;
+  --darkBlue: #1f2f56;
+  --redHatDisplay:"Red Hat Display", sans-serif;
 }
 
 body {
@@ -18,13 +27,13 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: -110px;
-  background-color: #e0e8ff;
+  background-color: var(--paleBlue);
 }
 
-#card {
+main {
   width: 350px;
   height: 540px;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 15px;
   margin-top: 30px;
   display: grid;
@@ -46,6 +55,7 @@ header h1 {
   margin-top: 30px;
   font-size: 22px;
   font-weight: 900;
+  color: var(--darkBlue);
 }
 
 header p {
@@ -56,11 +66,12 @@ header p {
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
-  color: rgb(165, 165, 165);
+  color: var(--desaturatedBlue);
 }
 
-main {
-  background-color: #f4f7ff;
+.product {
+  display: none;
+  background-color: var(--veryPaleBlue);
   padding: 15px;
   border-radius: 10px;
   display: grid;
@@ -72,7 +83,7 @@ main {
   align-items: center;
 }
 
-main img {
+.product img {
   grid-row: span 4;
   width: 35px;
   height: 35px;
@@ -87,14 +98,14 @@ main img {
 
 .price {
   font-weight: bold;
-  color: rgb(165, 165, 165);
+  color: var(--desaturatedBlue);
   grid-row: 3;
   grid-column: 2;
   font-size: 14px;
 }
 
 a {
-  color: hsl(224, 23%, 55%);
+  color: var(--brightBlue);
   font-family: "Red Hat Display", sans-serif;
   font-weight: bold;
   font-size: 12px;
@@ -102,12 +113,12 @@ a {
   grid-row: span 4;
 }
 
-a:hover {
-  color: #766cf1;
+.product a:hover {
+  color: var(--violetStats);
   text-decoration: none;
 }
 
-section {
+.payment {
   height: 130px;
   display: flex;
   flex-direction: column;
@@ -115,9 +126,9 @@ section {
   margin-top: 25px;
 }
 
-button {
-  background-color: #3829e0;
-  color: #e0e8ff;
+.btnPay {
+  background-color: var(--brightBlue);
+  color: var(--paleBlue);
   font-family: "Red Hat Display", sans-serif;
   font-weight: 800;
   font-size: 12px;
@@ -129,18 +140,19 @@ button {
   box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.219);
 }
 
-button:hover {
-  background-color: #766cf1;
+.btnPay:hover {
+  background-color: var(--violetStats);
   cursor: pointer;
 }
 
-section a {
+.payment a {
   margin-top: 25px;
   text-decoration: none;
+  color: var(--desaturatedBlue);
 }
 
-section a:hover {
-  color: #21293c;
+.payment a:hover {
+  color: var(--darkBlue);
 }
 
 footer {
